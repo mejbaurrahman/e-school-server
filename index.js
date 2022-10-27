@@ -20,6 +20,12 @@ app.get('/courses/:id', (req, res)=>{
   
 })
 
+app.get('/course/:id', (req, res)=>{
+  const courseId = req.params;
+  const course = courses.find(c=> c._id === parseInt(courseId.id))
+  console.log(course);
+  res.send(course);
+})
 app.get('/categories', (req, res)=>{
     res.json(categories);
 })
