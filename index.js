@@ -33,11 +33,11 @@ app.get('/courses', (req, res)=>{
     res.json(courses);
 })
 
-app.get('')
+
 app.get('/', (req, res) => {
     res.send('Welcome to E -school');
   })
   
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Listening on port ${port}`)
 })
